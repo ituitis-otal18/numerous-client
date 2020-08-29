@@ -2,6 +2,7 @@ const API = "https://numerous-server.herokuapp.com/api/v1/login";
 const fetch = require("node-fetch");
 const express = require("express");
 const path = require("path");
+const port = process.env.PORT || 3000;
 
 const app = express();
 const router = express.Router();
@@ -84,6 +85,6 @@ router.use(function (req, res) {
 });
 
 app.use("/", router);
-app.listen(process.env.port || 3000);
+app.listen(port);
 
 console.log("Server is Running...");
