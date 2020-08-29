@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- CSS -->
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <title>Numerous</title>
+</head>
+
+<body class="bg-1">
+  <section title="Navigation">
+    <nav class="navbar navbar-expand-md navbar-light bg-2 fixed-top">
+      <a class="navbar-brand ml-3" href="./index.html">
+        <img src="./img/icon.png" width="200" height="40" alt="icon" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item mr-3 dropdown">
+            <a class="nav-link btn-secondary dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false">
+              Settings
+            </a>
+            <div class="dropdown-menu dropdown-menu-right mt-2 text-center">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" onclick="changeMode(this)" id="modeSwitch" />
+                <label class="custom-control-label" for="modeSwitch">Dark Mode</label>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+  </section>
+
+  <section title="Forms">
+    <div class="d-flex justify-content-center my-5">
+      <aside class="col-md-3 mx-2">
+        <div class="card bg-light">
+          <article class="card-body">
+            <h4 class="card-title text-center my-4 text-dark">Sign in</h4>
+            <hr />
+            <p class="text-success text-center">Login to your account.</p>
+            <form action="/login" method="post">
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input name="mail" class="form-control" placeholder="Email or login" type="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                  <input name="password" class="form-control" placeholder="******" type="password" />
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa fa-sign-in-alt"></i>
+                  Login
+                </button>
+              </div>
+              <p class="text-center">
+                <a href="#" class="btn">Forgot password?</a>
+              </p>
+            </form>
+          </article>
+        </div>
+      </aside>
+      <aside class="col-md-3 mx-2">
+        <div class="card bg-light">
+          <article class="card-body">
+            <h4 class="card-title text-center my-4 text-dark">Sign up</h4>
+            <hr />
+            <p class="text-success text-center">Create a new acoount.</p>
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-sort-numeric-down"></i>
+                    </span>
+                  </div>
+                  <input class="form-control" placeholder="8 digit number" type="text" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </div>
+                  <input name="" class="form-control" placeholder="Email or login" type="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                  <input class="form-control" placeholder="******" type="password" />
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa fa-sign-in-alt"></i>
+                  Login
+                </button>
+              </div>
+            </form>
+          </article>
+        </div>
+      </aside>
+    </div>
+    <br /><br />
+  </section>
+
+  <footer title="Info">
+    <p class="mx-auto">
+      Designed and built by
+      <a class="badge badge-info" href="https://linktr.ee/hakan.otal">Hakan Otal</a>.
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/variables.js"></script>
+  <script src="./js/mode.js"></script>
+  <script src="./js/login.js"></script>
+
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

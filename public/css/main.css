@@ -1,0 +1,73 @@
+html[data-theme='light'] {
+    --bg-1: #FFFFFF;
+    --bg-2: #ebebebda;
+    --t-c: #000000;
+}
+html[data-theme='dark'] {
+    --bg-1: #6c757d;
+    --bg-2: #343a40;
+    --t-c: #FFFFFF;
+}
+.bg-1{ background-color: var(--bg-1); }
+.bg-2{ background-color: var(--bg-2); }
+
+body{
+    min-width: 320px;
+    color: var(--t-c);
+    font-family: 'Comfortaa', cursive;
+}
+
+.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+#postDiv {
+    width: 50%;
+    min-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--bg-1);
+    color: var(--t-c);
+    font-size: 16px;
+    resize: none;
+    display: block;
+    margin: 0 auto;
+}
+#postButton {
+    width: 50%;
+    display: block;
+}
+
+#feed {
+    width: 100%;
+}
+
+.frame{
+    background-color: var(--bg-2);
+    border-radius: 25px;
+    border: 2px solid #DC3545;
+    padding: 40px;
+    margin: 40px;
+}
+
+.frame2{
+    background-color: var(--bg-1);
+    border-radius: 25px;
+    border: 2px solid #DC3545;
+    padding: 40px;
+    margin: 40px;
+}
+
+footer{
+    background-color: var(--bg-2);
+    text-align: center;
+    padding: 40px;
+}
