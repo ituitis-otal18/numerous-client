@@ -37,11 +37,11 @@ router.get("/messages", function (req, res) {
 
 //LOGOUT
 router.get("/logout", function (req, res) {
-  res.cookie("isLogin", null);
-  res.cookie("userId", null);
-  res.cookie("userNum", null);
-  res.cookie("userMail", null);
-  res.cookie("userPassword", null);
+  isLogin = false;
+  userId = null;
+  userNum = null;
+  userMail = null;
+  userPassword = null;
   res.redirect("/");
 });
 
